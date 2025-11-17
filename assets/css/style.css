@@ -1880,3 +1880,34 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category .h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px 15px;
+  padding-left: 20px;
+}
+
+.skills-grid li {
+  font-size: 14px;
+  color: var(--light-gray);
+  position: relative;
+}
+
+.skills-grid li::before {
+  content: "•";
+  position: absolute;
+  left: -15px;
+  color: var(--orange-yellow-crayola);
+  font-weight: bold;
+}
